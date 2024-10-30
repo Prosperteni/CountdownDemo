@@ -1,0 +1,54 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #0966f1;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the body take up the full viewport height */
+}
+.countdown {
+    font-size: 36px;
+    margin: 50px;
+    background-color: #2c3e50; /* Background color for the countdown box */
+    color: #fff; /* Text color for the countdown box */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the countdown box */
+    box-shadow: 0px 0px 20px rgba(5, 73, 128, 0.5); /* Drop shadow for the countdown box */
+}
+
+/* Style for individual time units (days, hours, minutes, seconds) */
+#days, #hours, #minutes, #seconds {
+    display: inline-block;
+    font-size: 40px;
+    padding: 0 10px;
+    background-color: #e74c3c; /* Background color for time units */
+    color: #fff; /* Text color for time units */
+    margin: 0 5px;
+    border-radius: 5px; /* Rounded corners for time units */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Drop shadow for time units */
+}
+
+/* Styling for the "days" label */
+#days::after {
+    content: "  Days";
+}
+
+/* Styling for the "hours" label */
+#hours::after {
+    content: "  Hours";
+}
+
+/* Styling for the "minutes" label */
+#minutes::after {
+    content: "  Minutes";
+}
+
+/* Styling for the "seconds" label */
+#seconds::after {
+    content: "  Seconds";
+}
